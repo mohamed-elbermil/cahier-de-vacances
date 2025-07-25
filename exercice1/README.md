@@ -2,9 +2,9 @@
 
 Explication de mes choix :
 
-- Pour la soustraction, j'ai ajouté une condition qui affiche un message d'erreur lorsque le premier nombre est plus petit que le second. Dans le but qu'il ne retourne pas de valeur négatif
+- Pour la soustraction, j'ai ajouté une condition qui affiche un message d'erreur lorsque le premier nombre est plus petit que le second. Le but est qu'il ne retourne pas de valeur négatif.
 
-- Pour la division, une condition pour ne pas diviser par zéro car il n'y a pas vraiment d'intéret.
+- Pour la division, j'ai mis une condition pour ne pas diviser par zéro, car il n'y a pas vraiment d'intéret.
 
 ---
 
