@@ -18,4 +18,4 @@ Ce que j'ai appris :
 
 - Avoir une interraction avec le terminal de cette manière, car d'habitude je teste dans le navigateur avec prompt. Donc là, c'est nouveau pour moi.
 
-- Je n'ai pas eu le reflex de convertir la chaîne de caractère en décimal pour les 2 nombres saisi en console. J'ai appris que ce que l'utilisateur saisi dans le terminal, est du string même s'il tape des chiffres.cd
+- Je n'ai pas eu le reflex de convertir la chaîne de caractère en décimal pour les 2 nombres saisi en console. J'ai appris que ce que l'utilisateur saisi dans le terminal, est du string même s'il tape des chiffres
