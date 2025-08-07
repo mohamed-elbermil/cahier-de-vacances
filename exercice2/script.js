@@ -24,7 +24,7 @@ function genererNombreMystere(niveau) {
             break;
     
         default:
-            console.log('Niveau inconnu, par défaut vous jouerez en niveau moyen');
+            console.log('Le niveau saisi est inconnu. Par défaut vous jouerez en niveau moyen');
             max = 100
             break;
     }
@@ -48,8 +48,11 @@ function jouer(nombreMystere, tentative = 1) {
         }else if (devine > nombreMystere) {
             console.log("C'est moins !");
             jouer(nombreMystere, tentative +1);
-        } else {
-            console.log(`Bravo ! Tu as trouver le ${nombreMystere} en ${tentative} tentative(s)`);
+        }else if (tentative < 10){
+            console.log(`😲 En moins de 10 tentatives, Excellent !`);           
+         }       
+        else {
+            console.log(`👏 Bravo ! Tu as trouver le ${nombreMystere} en ${tentative} tentative(s)`);
             rl.close();
         }
     })
@@ -58,16 +61,16 @@ function jouer(nombreMystere, tentative = 1) {
 // Function qui démarre le jeu
 function start() {
     console.log("Choisis un niveau de difficulté (facile / moyen / difficile)");
-    console.log("1. Facile ");
-    console.log("2. Moyen ");
-    console.log("3. Difficile ");
+    console.log("1. 👌 Facile ");
+    console.log("2. 😉 Moyen ");
+    console.log("3. 😎 Difficile ");
 
     
 
     rl.question('Tape le numéro de ton choix ', (choix) => {
         let niveau;
 
-        switch (niveau) {
+        switch (parseInt(choix)) {
             case 1:
                 niveau = "facile";
                 break;
@@ -79,13 +82,13 @@ function start() {
                 break;
         
             default:
-                console.log("Choix invalide. Vous jouerez par défaut avec le niveau moyen");
-                niveau = moyen
+                console.log("⛔ Choix invalide. Vous jouerez par défaut avec le niveau moyen");
+                niveau = "moyen"
                 break;
         }
 
-        const nombreMystere = genererNombreMystere(choix);
-        console.log("Devinez le nombre mystère générer");
+        const nombreMystere = genererNombreMystere(niveau);
+        console.log("☺️  Devinez le nombre mystère généré");
         jouer(nombreMystere);        
     })
 }
