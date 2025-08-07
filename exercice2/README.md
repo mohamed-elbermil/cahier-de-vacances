@@ -19,4 +19,5 @@ Difficulté :
 Ce que j'ai appris :
 
 - Utiliser la method Math.random() pour générer un nombre aléatoire
+- Math.floor permet d'arrondir à l'entier inférieur.
 - Mieux utiliser les expressions interpolée, pour insérer des valeurs de manière dynamique
